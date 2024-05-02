@@ -1,0 +1,25 @@
+{
+  "name": "create-addon",
+  "version": "0.1.0",
+  "author": "Loïc Chen <ming.crepuscular@gmail.com>",
+  "scripts": {
+    "dev": "unbuild --stub",
+    "build": "unbuild --minify",
+    "prepublishOnly": "bun run build"
+  },
+  "bin": "index.js",
+  "files": [
+    "index.js",
+    "dist",
+    "templates"
+  ],
+  "devDependencies": {
+    "@types/node": "^17.0.29",
+    "typescript": "^4.6.3",
+    "unbuild": "^2.0.0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "create-create-x": "^0.1.1"
+  }
+}
